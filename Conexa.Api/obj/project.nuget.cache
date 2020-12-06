@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bursfvyF2f/42XCGFH7J8Vz6qr4EEKSnR44F4RA0l+lbJqjXEjRu4uEWIDH4JAQ0Glzsr1+husrht+nzynzsqw==",
+  "dgSpecHash": "jIXBAG/VUwrXHB1y1ianZEZc8DllEhot5W6eWeklXDcMEM1NdtH7dP5xESgKkt5EbVnpC0EKjEjhbOuCnaF+3w==",
   "success": true,
-  "projectFilePath": "C:\\conexa\\Conexa.Api\\Conexa.Api.csproj",
+  "projectFilePath": "C:\\ConexaTest\\conexaTest\\Conexa.Api\\Conexa.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

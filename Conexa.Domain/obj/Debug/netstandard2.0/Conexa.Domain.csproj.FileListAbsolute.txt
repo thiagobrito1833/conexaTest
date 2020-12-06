@@ -25,3 +25,16 @@ C:\conexa\Conexa.Domain\bin\Debug\netstandard2.0\System.Memory.xml
 C:\conexa\Conexa.Domain\bin\Debug\netstandard2.0\System.Buffers.xml
 C:\conexa\Conexa.Domain\bin\Debug\netstandard2.0\System.Runtime.CompilerServices.Unsafe.xml
 C:\conexa\Conexa.Domain\bin\Debug\netstandard2.0\System.Numerics.Vectors.xml
+C:\ConexaTest\conexaTest\Conexa.Domain\bin\Debug\netstandard2.0\Conexa.Domain.deps.json
+C:\ConexaTest\conexaTest\Conexa.Domain\bin\Debug\netstandard2.0\Conexa.Domain.dll
+C:\ConexaTest\conexaTest\Conexa.Domain\bin\Debug\netstandard2.0\Conexa.Domain.pdb
+C:\ConexaTest\conexaTest\Conexa.Domain\bin\Debug\netstandard2.0\Conexa.Integration.dll
+C:\ConexaTest\conexaTest\Conexa.Domain\bin\Debug\netstandard2.0\Conexa.Integration.pdb
+C:\ConexaTest\conexaTest\Conexa.Domain\bin\Debug\netstandard2.0\Conexa.Integration.dll.config
+C:\ConexaTest\conexaTest\Conexa.Domain\obj\Debug\netstandard2.0\Conexa.Domain.csprojAssemblyReference.cache
+C:\ConexaTest\conexaTest\Conexa.Domain\obj\Debug\netstandard2.0\Conexa.Domain.AssemblyInfoInputs.cache
+C:\ConexaTest\conexaTest\Conexa.Domain\obj\Debug\netstandard2.0\Conexa.Domain.AssemblyInfo.cs
+C:\ConexaTest\conexaTest\Conexa.Domain\obj\Debug\netstandard2.0\Conexa.Domain.csproj.CopyComplete
+C:\ConexaTest\conexaTest\Conexa.Domain\obj\Debug\netstandard2.0\Conexa.Domain.dll
+C:\ConexaTest\conexaTest\Conexa.Domain\obj\Debug\netstandard2.0\Conexa.Domain.pdb
+C:\ConexaTest\conexaTest\Conexa.Domain\obj\Debug\netstandard2.0\Conexa.Domain.csproj.CoreCompileInputs.cache

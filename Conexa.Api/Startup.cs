@@ -8,25 +8,30 @@ using Conexa.Infra.Ioc;
 using Newtonsoft.Json;
 using Conexa.Integration.Interface;
 using Conexa.Integration;
+using Microsoft.AspNetCore.Http;
+using Conexa.Domain.ViewModels;
 
 namespace Conexa.Api
 {
     public class Startup
     {
+        private IConfiguration _configuration;
+        public AppSettings settingsIntegration { get; private set; }
+
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            _configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
-     
-
+      
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<AppSettings>(_configuration.GetSection(
+                                     SettingsIntegration.SettingsIntegrations));
             NativeInject.RegisterServices(services);
             services.AddHttpClient<IContractIntegrationWeathermap, ContractIntegrationWeathermap>();
             services.AddHttpClient<IContractIntegrationSpotify, ContractIntegrationSpotify>();
-
+          
             services.AddControllers();          
             services.AddMvc().AddJsonOptions(opcoes =>
             {
@@ -35,6 +40,13 @@ namespace Conexa.Api
            
             services.AddSwaggerGen();
         }
+
+         public void OnGet()
+    {
+       
+        _configuration.GetSection(SettingsIntegration.SettingsIntegrations).Bind(settingsIntegration);
+
+    }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -60,6 +72,8 @@ namespace Conexa.Api
             {
                 endpoints.MapControllers();
             });
+
+          
         }
     }
 }

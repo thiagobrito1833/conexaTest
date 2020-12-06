@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\conexa\\Conexa.Infra\\Conexa.Infra.csproj": {}
+    "C:\\ConexaTest\\conexaTest\\Conexa.Infra\\Conexa.Infra.csproj": {}
   },
   "projects": {
-    "C:\\conexa\\Conexa.Domain\\Conexa.Domain.csproj": {
+    "C:\\ConexaTest\\conexaTest\\Conexa.Domain\\Conexa.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\conexa\\Conexa.Domain\\Conexa.Domain.csproj",
+        "projectUniqueName": "C:\\ConexaTest\\conexaTest\\Conexa.Domain\\Conexa.Domain.csproj",
         "projectName": "Conexa.Domain",
-        "projectPath": "C:\\conexa\\Conexa.Domain\\Conexa.Domain.csproj",
+        "projectPath": "C:\\ConexaTest\\conexaTest\\Conexa.Domain\\Conexa.Domain.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\conexa\\Conexa.Domain\\obj\\",
+        "outputPath": "C:\\ConexaTest\\conexaTest\\Conexa.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,8 +32,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\conexa\\Conexa.Integration\\Conexa.Integration\\Conexa.Integration.csproj": {
-                "projectPath": "C:\\conexa\\Conexa.Integration\\Conexa.Integration\\Conexa.Integration.csproj"
+              "C:\\ConexaTest\\conexaTest\\Conexa.Integration\\Conexa.Integration\\Conexa.Integration.csproj": {
+                "projectPath": "C:\\ConexaTest\\conexaTest\\Conexa.Integration\\Conexa.Integration\\Conexa.Integration.csproj"
               }
             }
           }
@@ -47,6 +47,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -72,14 +76,14 @@
         }
       }
     },
-    "C:\\conexa\\Conexa.Infra\\Conexa.Infra.csproj": {
+    "C:\\ConexaTest\\conexaTest\\Conexa.Infra\\Conexa.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\conexa\\Conexa.Infra\\Conexa.Infra.csproj",
+        "projectUniqueName": "C:\\ConexaTest\\conexaTest\\Conexa.Infra\\Conexa.Infra.csproj",
         "projectName": "Conexa.Infra",
-        "projectPath": "C:\\conexa\\Conexa.Infra\\Conexa.Infra.csproj",
+        "projectPath": "C:\\ConexaTest\\conexaTest\\Conexa.Infra\\Conexa.Infra.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\conexa\\Conexa.Infra\\obj\\",
+        "outputPath": "C:\\ConexaTest\\conexaTest\\Conexa.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -100,8 +104,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\conexa\\Conexa.Domain\\Conexa.Domain.csproj": {
-                "projectPath": "C:\\conexa\\Conexa.Domain\\Conexa.Domain.csproj"
+              "C:\\ConexaTest\\conexaTest\\Conexa.Domain\\Conexa.Domain.csproj": {
+                "projectPath": "C:\\ConexaTest\\conexaTest\\Conexa.Domain\\Conexa.Domain.csproj"
               }
             }
           }
@@ -140,12 +144,12 @@
         }
       }
     },
-    "C:\\conexa\\Conexa.Integration\\Conexa.Integration\\Conexa.Integration.csproj": {
+    "C:\\ConexaTest\\conexaTest\\Conexa.Integration\\Conexa.Integration\\Conexa.Integration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\conexa\\Conexa.Integration\\Conexa.Integration\\Conexa.Integration.csproj",
+        "projectUniqueName": "C:\\ConexaTest\\conexaTest\\Conexa.Integration\\Conexa.Integration\\Conexa.Integration.csproj",
         "projectName": "Conexa.Integration",
-        "projectPath": "C:\\conexa\\Conexa.Integration\\Conexa.Integration\\Conexa.Integration.csproj"
+        "projectPath": "C:\\ConexaTest\\conexaTest\\Conexa.Integration\\Conexa.Integration\\Conexa.Integration.csproj"
       },
       "frameworks": {
         "net472": {}

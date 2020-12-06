@@ -19,9 +19,6 @@ namespace Conexa.Integration
             _httpClient = httpClient;
             _settings = settings;
 
-            _settings.Value.KeyWeathermap = "6820a32460a168648ccfe775dcfd6772";
-
-
             _remoteServiceBaseUrl = $"http://api.openweathermap.org/data/2.5/";
         }
 

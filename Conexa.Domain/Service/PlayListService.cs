@@ -3,9 +3,6 @@ using Conexa.Domain.Entities;
 using Conexa.Integration.Interface;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Conexa.Domain.Service
@@ -19,7 +16,7 @@ namespace Conexa.Domain.Service
         {
             _contractIntegrationWeathermap = integrationWeathermap;
             _integrationSpotify = integrationSpotify;
-
+         
         }
 
 

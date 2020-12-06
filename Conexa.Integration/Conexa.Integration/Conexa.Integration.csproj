@@ -72,6 +72,7 @@
     <Compile Include="ContractIntegrationWeathermap.cs" />
     <Compile Include="Interface\IContractIntegrationWeathermap.cs" />
     <Compile Include="Interface\IContractIntegrationSpotify.cs" />
+    <Compile Include="Interface\ISettingsIntegration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\Climate.cs" />
     <Compile Include="ViewModels\Main.cs" />
