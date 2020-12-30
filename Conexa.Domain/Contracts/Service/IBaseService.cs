@@ -6,6 +6,6 @@ namespace Conexa.Domain.Contracts.Service
 {
     public interface IBaseService<TEntity>
     {
-        Task<ResultAction<List<TEntity>>> GetList();
+      
     }
 }

@@ -29,7 +29,7 @@ namespace Conexa.Test
         [InlineData(13, EnumGenre.rock)]
         [InlineData(2, EnumGenre.classica)]
         [InlineData(50, EnumGenre.festa)]
-        public async void Get_MusicalGenre(decimal temperature, EnumGenre expectedResult)
+        public async void Get_MusicalGenre(double temperature, EnumGenre expectedResult)
         {
             var result = await playlistService.GetMusicalGenre(temperature); ;
             Assert.Equal(expectedResult, result.Result);

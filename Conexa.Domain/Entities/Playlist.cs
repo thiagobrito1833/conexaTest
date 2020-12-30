@@ -1,10 +1,9 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Text;
 
 namespace Conexa.Domain.Entities
 {
-   public class Playlist
+   public class Playlist : ViewBase
     {
         public Playlist()
         {

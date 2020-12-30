@@ -23,35 +23,49 @@ namespace Conexa.Domain.Service
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0017:Simplify object initialization", Justification = "<Pending>")]
         public async Task<ResultAction<Playlist>> GetList(string city)
         {
-            var ret = new ResultAction<Playlist>();
-            var pl = new Playlist();
+            var result = new ResultAction<Playlist>();
+            var playList = new Playlist();
             var music = new Music();
-            music.Name = "Some Like You";
-            pl.Musics.Add(music);
+         
+
+            if (string.IsNullOrEmpty(city))
+                result.AddValidation("Nome da cidade não pode ser vazio!");
+            else
+            {
+                var climate = await _contractIntegrationWeathermap.GetTemperature(city);
+
+                if (climate == null )
+                {
+                    result.AddValidation("Clima não encontrado para " + city);
+                    return result;
+                }
+                   
+
+                var genre = GetMusicalGenre(climate.getTemperatura()).Result;
+
+                var playlist = await _integrationSpotify.GetPlayList(genre.Result.ToString(), climate.Sys.Pais);
+
+                if (playlist == null)
+                {
+                    result.AddValidation("Playlist não encontrada para cidade " + city);
+                    return result;                  
+                }
+                   
+
+                //Rafactor - AutoMapper
+                foreach (var item in playlist)
+                {
+                    music = new Music();
+                    music.Name = item.Name;
+                    playList.Musics.Add(music);
+                }
+            }
+
           
 
-            //if (string.IsNullOrEmpty(city))
-            //    ret.AddValidation( "Nome da cidade não pode ser vazio!");
+         
 
-
-            var climate = await _contractIntegrationWeathermap.GetTemperature(city);
-            //if (clima == null)
-            //    return NotFound("Clima não encontrado para " + city);
-
-            var genre = GetMusicalGenre(climate.getTemperatura());
-
-            var playlist = await _integrationSpotify.GetPlayList(genre.Result.ToString(), climate.Sys.Pais);
-            //if (playlist == null)
-            //    return NotFound("Playlist não encontrada para cidade " + nomeCidade);
-
-            //Rafactor - AutoMapper
-            foreach (var item in playlist)
-            {
-                 music = new Music();
-                music.Name = item.Name;
-                pl.Musics.Add(music);
-            }    
-            return  ret.SetResult(pl);
+            return result.SetResult(playList);
         }
 
         public async Task<ResultAction<Playlist>> GetList(decimal longitude, decimal latitude)
@@ -95,9 +109,6 @@ namespace Conexa.Domain.Service
             return ret.SetResult(genero);
         }
 
-        public Task<ResultAction<List<Playlist>>> GetList()
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

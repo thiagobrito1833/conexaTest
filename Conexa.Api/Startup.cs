@@ -5,11 +5,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Conexa.Infra.Ioc;
-using Newtonsoft.Json;
 using Conexa.Integration.Interface;
 using Conexa.Integration;
-using Microsoft.AspNetCore.Http;
-using Conexa.Domain.ViewModels;
+using Conexa.Api.Errors;
 
 namespace Conexa.Api
 {
@@ -54,6 +52,10 @@ namespace Conexa.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+
+         
+            app.UseMiddleware<ExceptionMiddleware>();
+
             app.UseSwagger();
 
             app.UseSwaggerUI(c =>

@@ -41,8 +41,8 @@ C:\ConexaTest\conexaTest\Conexa.Integration\Conexa.Integration\bin\Debug\System.
 C:\ConexaTest\conexaTest\Conexa.Integration\Conexa.Integration\bin\Debug\System.Memory.xml
 C:\ConexaTest\conexaTest\Conexa.Integration\Conexa.Integration\bin\Debug\System.Numerics.Vectors.xml
 C:\ConexaTest\conexaTest\Conexa.Integration\Conexa.Integration\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\ConexaTest\conexaTest\Conexa.Integration\Conexa.Integration\obj\Debug\Conexa.Integration.csprojAssemblyReference.cache
 C:\ConexaTest\conexaTest\Conexa.Integration\Conexa.Integration\obj\Debug\Conexa.Integration.csproj.CoreCompileInputs.cache
 C:\ConexaTest\conexaTest\Conexa.Integration\Conexa.Integration\obj\Debug\Conexa.Integration.csproj.CopyComplete
 C:\ConexaTest\conexaTest\Conexa.Integration\Conexa.Integration\obj\Debug\Conexa.Integration.dll
 C:\ConexaTest\conexaTest\Conexa.Integration\Conexa.Integration\obj\Debug\Conexa.Integration.pdb
+C:\ConexaTest\conexaTest\Conexa.Integration\Conexa.Integration\obj\Debug\Conexa.Integration.csprojAssemblyReference.cache
